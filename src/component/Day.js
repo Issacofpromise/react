@@ -5,12 +5,8 @@ export default function DayList(){// console.log(dum);
   const [days, setD]=useState([]);
 
   useEffect(()=>{ fetch('http://localhost:3001/days')
-  .then(my =>{
-    return my.json()
-  })
-  .then(dt =>{
-    setD(dt)
-  })
+  .then(my =>{return my.json()})
+  .then(days =>{setD(days)})
 }, []);
 
   return (<>
