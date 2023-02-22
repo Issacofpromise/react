@@ -1,14 +1,8 @@
-import { useEffect, useState } from "react";
+import Json from '../hooks/useFetch';
 import {Link} from 'react-router-dom';
 
-export default function DayList(){// console.log(dum);
-  const [days, setD]=useState([]);
-
-  useEffect(()=>{ fetch('http://localhost:3001/days')
-  .then(my =>{return my.json()})
-  .then(days =>{setD(days)})
-}, []);
-
+export default function DayList(){ 
+  const days = Json('http://localhost:3001/days');
   return (<>
     <ul className='list_day'>
     {days.map(dd =>(
