@@ -4,8 +4,9 @@ import { BrowserRouter, Route , Switch } from 'react-router-dom';
 import One from './component/Head';
 import Add from './component/crewd';
 import Dad from './component/creday';
-import Era from './component/del';
+import Rd from './component/del';
 import EmptyPage from "./component/EmptyPage";
+import React from 'react';
 
 function App(){
   return ( <BrowserRouter>
@@ -16,7 +17,7 @@ function App(){
 <Route path="/day/:day"><Tb/></Route>
 <Route path="/crea_w"><Add/></Route>
 <Route path="/cre_D"><Dad/></Route>
-<Route path="/del"><Era/></Route>
+<Route path="/del"><Rd/></Route>
 <Route><EmptyPage /></Route>
   </Switch>  </div> </BrowserRouter>
 )}

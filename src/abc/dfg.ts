@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function useFt(url) {
+export default function useFt(url:string) {
 var [da, setD]=useState([]);
 
 useEffect(()=>{ fetch(url)
