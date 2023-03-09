@@ -1,4 +1,4 @@
-import Json from '../abc/dfg';
+import Json from '../abc/dfg.ts';
 import { useRef, useState } from 'react';
 import {Dy} from './Day';
 import { useHistory } from 'react-router-dom';

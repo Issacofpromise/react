@@ -1,4 +1,4 @@
-import Json from '../abc/dfg';
+import Json from '../abc/dfg.ts';
 import {Link} from 'react-router-dom';
 import React from 'react';
 

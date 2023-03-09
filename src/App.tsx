@@ -1,11 +1,11 @@
-import Absl from './component/Day';
-import Tb from './component/sys';
+import Absl from './component/Day.tsx';
+import Tb from './component/sys.tsx';
 import { BrowserRouter, Route , Switch } from 'react-router-dom';
-import One from './component/Head';
-import Add from './component/crewd';
-import Dad from './component/creday';
-import Rd from './component/del';
-import EmptyPage from "./component/EmptyPage";
+import One from './component/Head.tsx';
+import Add from './component/crewd.tsx';
+import Dad from './component/creday.tsx';
+import Rd from './component/del.tsx';
+import EmptyPage from "./component/EmptyPage.tsx";
 import React from 'react';
 
 function App(){

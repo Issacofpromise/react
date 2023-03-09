@@ -1,4 +1,4 @@
-import Json from '../abc/dfg';
+import Json from '../abc/dfg.ts';
 import React, { useRef, useState } from 'react';
 import {Dy} from './Day';
 import {Iwd} from './word';
@@ -7,13 +7,13 @@ const da:Dy[]= Json('http://localhost:4000/days');
 const du:Iwd[] = Json('http://localhost:4000/words');
 const [ed,std]=useState(false);
 const [es,st]=useState(false);
-function se(qw:React.FormEvent){ qw.preventDefault();
+function se(){
 if(!ed && idRef.current){std(true);
   const id=idRef.current.value;
 fetch(`http://localhost:4000/days/${id}`,{
         method:"DELETE"})
         .then(asw=>{if(asw.ok){ return std(false)}})}}
-function ts(qe:React.FormEvent){ qe.preventDefault();
+function ts(){
         if(!es && Rrf.current){st(true);
   const id=Rrf.current.value;
 fetch(`http://localhost:4000/words/${id}`, {

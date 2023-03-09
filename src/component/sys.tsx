@@ -1,8 +1,8 @@
 import {useParams} from "react-router-dom";
 import { useHistory } from 'react-router-dom';
-import Wrd,{Iwd} from './word';
+import Wrd,{Iwd} from './word.tsx';
 import {Dy} from './Day';
-import Json from '../abc/dfg';
+import Json from '../abc/dfg.ts';
 import React from "react";
 export default function Tal(){ const hi=useHistory();
   const da:Dy[] = Json('http://localhost:4000/days');
